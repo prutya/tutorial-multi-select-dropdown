@@ -6,6 +6,7 @@ export default function MultiSelectDropdown({
   formFieldName,
   options,
   onChange,
+  prompt = "Select one or more options",
 }) {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
@@ -32,7 +33,7 @@ export default function MultiSelectDropdown({
       <input type="checkbox" className="hidden peer" />
 
       <div className="cursor-pointer after:content-['▼'] after:text-xs after:ml-1 after:inline-flex after:items-center peer-checked:after:-rotate-180 after:transition-transform">
-        {"Show the dropdown"}
+        {prompt}
       </div>
 
       <div className="absolute bg-white border transition-opacity opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto">

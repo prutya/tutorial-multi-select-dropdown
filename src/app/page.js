@@ -44,6 +44,7 @@ export default function Page() {
           onChange={(selectedCountries) => {
             console.debug("selectedCountries", selectedCountries);
           }}
+          prompt="Select one or more countries"
         />
         <input type="submit" />
       </form>
