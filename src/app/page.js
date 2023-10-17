@@ -35,7 +35,7 @@ export default function Page() {
   return (
     <>
       <h1>{"Multi-Select Dropdown"}</h1>
-      <form>
+      <form action="/api" method="post">
         <MultiSelectDropdown formFieldName={"countries"} options={COUNTRIES} />
         <input type="submit" />
       </form>
