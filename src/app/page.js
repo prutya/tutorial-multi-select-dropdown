@@ -1,3 +1,5 @@
+"use client";
+
 import MultiSelectDropdown from "../components/MultiSelectDropdown";
 
 const COUNTRIES = [
@@ -36,7 +38,13 @@ export default function Page() {
     <>
       <h1>{"Multi-Select Dropdown"}</h1>
       <form action="/api" method="post">
-        <MultiSelectDropdown formFieldName={"countries"} options={COUNTRIES} />
+        <MultiSelectDropdown
+          formFieldName={"countries"}
+          options={COUNTRIES}
+          onChange={(selectedCountries) => {
+            console.debug("selectedCountries", selectedCountries);
+          }}
+        />
         <input type="submit" />
       </form>
     </>

@@ -1,4 +1,32 @@
-export default function MultiSelectDropdown({ formFieldName, options }) {
+"use client";
+
+import { useState } from "react";
+
+export default function MultiSelectDropdown({
+  formFieldName,
+  options,
+  onChange,
+}) {
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  const handleChange = (e) => {
+    const isChecked = e.target.checked;
+    const option = e.target.value;
+
+    const selectedOptionSet = new Set(selectedOptions);
+
+    if (isChecked) {
+      selectedOptionSet.add(option);
+    } else {
+      selectedOptionSet.delete(option);
+    }
+
+    const newSelectedOptions = Array.from(selectedOptionSet);
+
+    setSelectedOptions(newSelectedOptions);
+    onChange(newSelectedOptions);
+  };
+
   return (
     <label className="relative">
       <input type="checkbox" className="hidden peer" />
@@ -23,6 +51,7 @@ export default function MultiSelectDropdown({ formFieldName, options }) {
                     name={formFieldName}
                     value={option}
                     className="cursor-pointer"
+                    onChange={handleChange}
                   />
                   <span className="ml-1">{option}</span>
                 </label>
