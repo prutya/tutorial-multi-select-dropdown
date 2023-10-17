@@ -6,3 +6,5 @@
 !.yarn/versions
 .pnp.*
 node_modules
+.next
+out
