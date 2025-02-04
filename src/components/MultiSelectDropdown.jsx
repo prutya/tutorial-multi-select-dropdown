@@ -66,7 +66,7 @@ export default function MultiSelectDropdown({
     <label className="relative">
       <input type="checkbox" className="hidden peer" />
 
-      <div className="cursor-pointer after:content-['▼'] after:text-xs after:ml-1 after:inline-flex after:items-center peer-checked:after:-rotate-180 after:transition-transform inline-flex border rounded px-5 py-2">
+      <div className="cursor-pointer after:content-['▼'] after:text-xs after:ml-1 after:inline-flex after:items-center peer-checked:after:-rotate-180 after:transition-transform inline-flex border rounded-sm px-5 py-2">
         {prompt}
         {isJsEnabled && selectedOptions.length > 0 && (
           <span className="ml-1 text-blue-500">{`(${selectedOptions.length} selected)`}</span>
@@ -80,7 +80,7 @@ export default function MultiSelectDropdown({
               <button
                 onClick={handleSelectAllClick}
                 disabled={!isSelectAllEnabled}
-                className="w-full text-left px-2 py-1 text-blue-600 disabled:opacity-50"
+                className="w-full text-left px-2 py-1 text-blue-600 disabled:opacity-50 cursor-pointer"
               >
                 {"Select All"}
               </button>
@@ -89,7 +89,7 @@ export default function MultiSelectDropdown({
               <button
                 onClick={handleClearSelectionClick}
                 disabled={!isClearSelectionEnabled}
-                className="w-full text-left px-2 py-1 text-blue-600 disabled:opacity-50"
+                className="w-full text-left px-2 py-1 text-blue-600 disabled:opacity-50 cursor-pointer"
               >
                 {"Clear selection"}
               </button>

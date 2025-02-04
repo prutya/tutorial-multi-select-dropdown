@@ -50,7 +50,7 @@ export default function Page() {
         </div>
         <input
           type="submit"
-          className="bg-blue-500 text-white rounded px-5 py-2 mt-5 cursor-pointer"
+          className="bg-blue-500 text-white rounded-sm px-5 py-2 mt-5 cursor-pointer"
         />
       </form>
     </main>
