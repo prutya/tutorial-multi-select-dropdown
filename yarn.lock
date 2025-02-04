@@ -9,12 +9,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "05_react-multi-select-dropdown@workspace:."
   dependencies:
-    "@tailwindcss/postcss": "npm:4.0.0"
+    "@tailwindcss/postcss": "npm:4.0.3"
     next: "npm:15.1.6"
     postcss: "npm:8.5.1"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
-    tailwindcss: "npm:4.0.0"
+    tailwindcss: "npm:4.0.3"
   languageName: unknown
   linkType: soft
 
@@ -288,7 +288,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/node@npm:^4.0.0":
+"@tailwindcss/node@npm:^4.0.3":
   version: 4.0.3
   resolution: "@tailwindcss/node@npm:4.0.3"
   dependencies:
@@ -376,7 +376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/oxide@npm:^4.0.0":
+"@tailwindcss/oxide@npm:^4.0.3":
   version: 4.0.3
   resolution: "@tailwindcss/oxide@npm:4.0.3"
   dependencies:
@@ -418,17 +418,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/postcss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@tailwindcss/postcss@npm:4.0.0"
+"@tailwindcss/postcss@npm:4.0.3":
+  version: 4.0.3
+  resolution: "@tailwindcss/postcss@npm:4.0.3"
   dependencies:
     "@alloc/quick-lru": "npm:^5.2.0"
-    "@tailwindcss/node": "npm:^4.0.0"
-    "@tailwindcss/oxide": "npm:^4.0.0"
+    "@tailwindcss/node": "npm:^4.0.3"
+    "@tailwindcss/oxide": "npm:^4.0.3"
     lightningcss: "npm:^1.29.1"
     postcss: "npm:^8.4.41"
-    tailwindcss: "npm:4.0.0"
-  checksum: 10/76a232425ae75053ab501b404d3689e14f8d3ca15168fb3d0f88b3709b3b59e8c2d5a6ad5eeb88cc5f239376ba904b9fcf6424735807766f9c0e9c3a6ddeb67e
+    tailwindcss: "npm:4.0.3"
+  checksum: 10/f23240ea8eb0ea0a487ff88786566f1156db38f5448aeb514eeefebb6b6d99b0b7f5cf00b4fc7d2e835f1bbf7a88edee04f8585b4ff825cdae6a4a62ca9d5de3
   languageName: node
   linkType: hard
 
@@ -911,13 +911,6 @@ __metadata:
     babel-plugin-macros:
       optional: true
   checksum: 10/ba01200e8227fe1441a719c2e7da96c8aa7ef61d14211d1500e1abce12efa118479bcb6e7e12beecb9e1db76432caad2f4e01bbc0c9be21c134b088a4ca5ffe0
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "tailwindcss@npm:4.0.0"
-  checksum: 10/3491d86a7c3ad08209eb988fcf36d893e5f5a4c48c63da706a8788f6111e141386e1b5c8fa46f2650b08200c1b8011251d97b6d65514bdc14aa06597871d1f7d
   languageName: node
   linkType: hard
 
